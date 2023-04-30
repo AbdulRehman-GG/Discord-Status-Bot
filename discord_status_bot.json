@@ -1,0 +1,57 @@
+{
+    "help" : 
+    {
+        "this 'help-block' can be left in here" : "it doesnt get parsed",
+        "bot":{
+            "un/reachable" : "Alive/Dead, On/Off ...",
+            "mention-role-id": "the role id of the role that gets mentioned",
+            "mention-channel-id": "the channel id, where the bot posts notifications (needs access to it)",
+            "mention-time" : "min time to repost that server went down, 10 [minutes] seems to be ok",
+            "check-delay" : "every X minutes checking status, (mush not be higher then mention time!)",
+            "what-am-i-doint" : "the description of what the bot is doing, beep boop, services... somethink like this.",
+            "" : ""
+        },
+        "service":{
+            "name": "Channel Name (think about it, the un/reachable needs to fit on it too!)",
+            "channel-id": "channel-id, rightclick the VOICE-CHANNEL and get its id (the bot needs access to rename this channel!)",
+            "type": "currently type is just 1 socket pinging, (future 1 more, local processes)",
+            "url": "servers url, without leading '/' !",
+            "port": "the port you want to check on",
+            "timeout": "the max time the server has to respond, i prefer not to go higher then 10",
+            "notification": "should the bot notifly on text channel if the server is gone down"
+        }
+    },
+    "----------------------------------" : "----------------------------------",
+    "bot" : 
+    {
+        "token": "(Bot Token Here)",
+        "mention-role-id": 963780127655866438,
+        "mention-channel-id": 1045083370335506432,
+        "what-am-i-doint": "services",
+        "mention-time": 10,
+        "check-delay": 1,
+        "reachable" : "Online",
+        "unreachable" : "Offline"
+    },
+    "service":
+    [
+        {
+            "name": "WebService",
+            "channel-id": 824303777817165844,
+            "type": 1,
+            "url": "localhost",
+            "port": 80,
+            "timeout": 5,
+            "notification": true
+        },
+        {
+            "name": "MySQL",
+            "channel-id": 824347113931800616,
+            "type": 1,
+            "url": "localhost",
+            "port": 3306,
+            "timeout": 5,
+            "notification": true
+        }
+    ]
+}
