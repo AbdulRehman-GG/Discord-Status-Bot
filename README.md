@@ -8,5 +8,5 @@
     
     pip3 install psutil
 
-#Screenshot 1
-https://media.discordapp.net/attachments/971014279518093312/1102384260561772564/image.png
+
+![image (1)](https://user-images.githubusercontent.com/132234355/235382297-dd1887fb-deee-451e-bcc5-405bdc54378e.png)
